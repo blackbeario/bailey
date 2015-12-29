@@ -1,6 +1,6 @@
 FlowRouter.notFound = {
   action() {
-    ReactLayout.render( 'default', { yield: 'notFound' } );
+    ReactLayout.render( Default, { yield: <NotFound /> } );
   }
 };
 

@@ -12,13 +12,13 @@ const authenticatedRoutes = FlowRouter.group({
 authenticatedRoutes.route( '/', {
   name: 'index',
   action() {
-    ReactLayout.render( 'default', { yield: 'index' } );
+    ReactLayout.render( Default, { yield: <Index /> } );
   }
 });
 
 authenticatedRoutes.route( '/dashboard', {
   name: 'dashboard',
   action() {
-    ReactLayout.render( 'default', { yield: 'dashboard' } );
+    ReactLayout.render( Default, { yield: <Dashboard /> } );
   }
 });

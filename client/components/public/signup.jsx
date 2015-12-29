@@ -1,4 +1,4 @@
-Signup = React.createclassNameName({
+Signup = React.createClass({
   componentDidMount(){
     Modules.client.signup({form: "#signup"});
   },
