@@ -12,6 +12,14 @@ Signup = React.createClass({
           <h4 className="page-header">Sign Up</h4>
           <form id="signup" className="signup" onSubmit={this.handleSubmit}>
             <div className="form-group">
+              <label htmlFor="firstName">First Name</label>
+              <input type="text" name="firstName" className="form-control" placeholder="First Name"/>
+            </div>
+            <div className="form-group">
+              <label htmlFor="lastName">Last Name</label>
+              <input type="text" name="lastName" className="form-control" placeholder="Last Name"/>
+            </div>
+            <div className="form-group">
               <label htmlFor="emailAddress">Email Address</label>
               <input type="email" name="emailAddress" className="form-control" placeholder="Email Address"/>
             </div>

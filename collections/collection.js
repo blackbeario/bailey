@@ -1,12 +1,12 @@
-Collection = new Meteor.Collection( 'collection' );
+People = new Meteor.Collection( 'people' );
 
-Collection.allow({
+People.allow({
   insert: () => false,
   update: () => false,
   remove: () => false
 });
 
-Collection.deny({
+People.deny({
   insert: () => true,
   update: () => true,
   remove: () => true
@@ -19,4 +19,4 @@ let CollectionSchema = new SimpleSchema({
   }
 });
 
-Collection.attachSchema( CollectionSchema );
+People.attachSchema( CollectionSchema );

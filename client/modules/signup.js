@@ -9,6 +9,12 @@ let _validate = ( form, template ) => {
 let validation = ( template ) => {
   return {
     rules: {
+      firstName: {
+        required: true
+      },
+      lastName: {
+        required: true
+      },
       emailAddress: {
         required: true,
         email: true
@@ -19,6 +25,12 @@ let validation = ( template ) => {
       }
     },
     messages: {
+      firstName: {
+        required: 'Need a first name here.'
+      },
+      lastName: {
+        required: 'Need a last name here.'
+      },
       emailAddress: {
         required: 'Need an email address here.',
         email: 'Is this email address legit?'
@@ -34,6 +46,11 @@ let validation = ( template ) => {
 
 let _handleSignup = ( ) => {
   let user = {
+    profile: {
+      name: {
+        first: $( '[name="firstName"]' ).val(),
+        last: $( '[name="lastName"]' ).val() }
+    },
     email: $( '[name="emailAddress"]' ).val(),
     password: $( '[name="password"]' ).val()
   };
